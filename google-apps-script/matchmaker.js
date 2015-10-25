@@ -20,7 +20,7 @@ function assignAllPairs() {
       }
 
       // Make an array of previous pairs
-      user.previous = [user['Wk1 pair']]
+      user.previous = [user['Wk1 pair'], user['Wk2 pair'], user['Wk3 pair']]
 
       return user
     }
@@ -116,4 +116,12 @@ function savePairs() {
       .setValue(pairKey.toString())
   })
 
+}
+
+function savePairMenuButton() {
+  // add note reminding admin to:
+  // add column for week to Users sheet
+  // adjust week number in spreadsheet.gs
+  // add past weeks to Previous pair array in matchmaker.gs
+  savePairs()
 }

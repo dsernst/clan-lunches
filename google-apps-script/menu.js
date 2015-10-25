@@ -22,21 +22,25 @@ function onOpen() {
       name: 'Assign unique keys',
       functionName: 'assignUniqueKeys',
     },
-    { 
+    {
       name: 'Send form to all',
       functionName: 'sendFormToAll',
     },
-    { 
+    {
       name: 'Send form to specific',
       functionName: 'sendFormToSpecific'
     },
+//    {
+//      name: 'Recalculate distances sheet',
+//      functionName: 'buildDistancesSheet'
+//    },
+//    {
+//      name: 'Recalculate days sheet',
+//      functionName: 'buildDaysSheet'
+//    },
     {
-      name: 'Recalculate distances sheet',
-      functionName: 'buildDistancesSheet'
-    },
-    {
-      name: 'Recalculate days sheet',
-      functionName: 'buildDaysSheet'
+      name: 'Assign pairs',
+      functionName: 'savePairMenuButton'
     }
   ]);
 };
